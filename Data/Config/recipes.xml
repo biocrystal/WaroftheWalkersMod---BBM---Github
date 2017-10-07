@@ -5284,6 +5284,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="BlueprintPaper" count="8"/>
 </recipe>
 
+<!-- Extra twine recipe -->
+<recipe name="Twine" count="1" craft_area="workbench">
+	<ingredient name="cottonPlant" count="10"/>
+</recipe>
+
 </recipes>
 <!-- To do (maybe / later)
 <recipe name="steelArrowHead" count="1" craft_area="forge" craft_tool="calipers" material_based="true">

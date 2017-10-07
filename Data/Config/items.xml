@@ -9533,137 +9533,6 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None" />
 </item>
 
-
-<!--
-<item id="1501" name="superWrench">
-	<property name="Extends" value="wrench"/>
-	<property name="CustomIcon" value="wrench"/>
-	<property name="CustomIconTint" value="ffa0a0"/>
-	<Property name="TintColor" value="255,160,160"/>
-	<property name="CreativeMode" value="Dev"/>
-	<property class="Attributes">
-		<property name="EntityDamage" value="5000,10000"/>
-		<property name="BlockDamage" value="5000,10000"/>
-	</property>
-</item>
-
-
-<item id="1502" name="gunSuperDigger">
-	<property name="CustomIcon" value="gunMP5"/>
-	<property name="CustomIconTint" value="ffa0a0"/>
-	<Property name="TintColor" value="255,160,160"/>
-	<property name="CreativeMode" value="Dev"/>
-	<property name="Meshfile" value="Items/Weapons/Ranged/MP5/MP5Prefab"/>
-	<property name="Material" value="organic"/>
-	<property name="HoldType" value="6"/>
-	<property name="Stacknumber" value="1"/>
-	<property name="DegradationBreaksAfter" value="true"/>
-	<property name="Degradation" value="99999" param1="true"/>
-	<property name="SoundJammed" value="weapon_jam"/>
-	<property name="CrosshairUpAfterShot" value="false"/>
-	<property name="CrosshairOnAim" value="true"/>
-	<property class="Action0">
-		<property name="Class" value="Ranged"/>
-		<property name="Hitmask_override" value="Melee"/>
-		<property name="Delay" value="0.150"/>
-		<property name="Range" value="300"/>
-		<property name="Auto_fire" value="true"/>
-		<property name="Rays_per_shot" value="1"/>
-		<property name="Rays_spread" value="0"/>
-		<property name="Crosshair_min_distance" value="5"/>
-		<property name="Crosshair_max_distance" value="8"/>
-		<property name="DamageBlock" value="3000"/>
-		<property name="DamageEntity" value="0.1"/>
-		<property name="Single_magazine_usage" value="true"/>
-		<property name="Infinite_ammo" value="true"/>
-		<property name="Magazine_items" value="9mmBullet"/>
-		<property name="Reload_time" value="4.1"/>
-		<property name="Bullet_icon" value="uzi"/>
-		<property name="Sound_start" value=""/>
-		<property name="Sound_repeat" value=""/>
-		<property name="Sound_end" value=""/>
-		<property name="Sound_empty" value="weapon_empty"/>
-		<property name="Sound_reload" value="mp5_reload"/>
-		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
-		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-	</property>
-	<property class="Action1">
-		<property name="Class" value="Zoom"/>
-		<property name="Zoom_max_out" value="38"/>
-		<property name="Zoom_max_in" value="10"/>
-	</property>
-	</item>
-
-<item id="1503" name="gunJustDie">
-	<property name="CustomIcon" value="gunPistol"/>
-	<property name="CustomIconTint" value="ffa0a0"/>
-	<Property name="TintColor" value="255,160,160"/>
-	<property name="CreativeMode" value="Dev"/>
-	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab"/>
-	<property name="Material" value="organic"/>
-	<property name="HoldType" value="1"/>
-	<property name="Stacknumber" value="1"/>
-	<property name="DegradationBreaksAfter" value="true"/>
-	<property name="Degradation" value="99999" param1="true"/>
-	<property name="SoundJammed" value="weapon_jam"/>
-	<property name="CrosshairUpAfterShot" value="false"/>
-	<property name="CrosshairOnAim" value="true"/>
-	<property class="Action0">
-		<property name="Class" value="Ranged"/>
-		<property name="Delay" value="0.15"/>
-		<property name="Range" value="300"/>
-		<property name="Auto_fire" value="true"/>
-		<property name="Rays_per_shot" value="5"/>
-		<property name="Rays_spread" value="0.85"/>
-		<property name="DamageEntity" value="1000"/>
-		<property name="DamageBlock" value="0"/>
-		<property name="Single_magazine_usage" value="true"/>
-		<property name="Infinite_ammo" value="true"/>
-		<property name="Magazine_items" value="9mmBullet"/>
-		<property name="Reload_time" value="2"/>
-		<property name="Bullet_icon" value="pistol"/>
-		<property name="Sound_start" value="Pistol_Fire"/>
-		<property name="Sound_start" value=""/>
-		<property name="Sound_repeat" value=""/>
-		<property name="Sound_end" value=""/>
-		<property name="Sound_empty" value="weapon_empty"/>
-		<property name="Sound_reload" value="pistol_reload"/>
-		<property name="Particles_muzzle_fire" value="nozzleflash"/>
-		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
-	</property>
-	<property class="Action1">
-		<property name="Class" value="Zoom"/>
-		<property name="Zoom_max_out" value="45"/>
-		<property name="Zoom_max_in" value="10"/>
-	</property>
-	</item>
-
-<item id="1504" name="hammerOfGod">
-	<property name="CreativeMode" value="Dev"/>
-	<property name="CustomIcon" value="clawHammer"/> <property name="CustomIconTint" value="ffa0a0"/>
-	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
-	<property name="Material" value="metal"/>
-	<property name="HoldType" value="32"/>
-	<property name="DegradationBreaksAfter" value="true"/>
-	<property name="SoundJammed" value="ItemNeedsRepair"/>
-	<property name="SoundDestroy" value="wooddestroy1"/>
-	<property class="Action0">
-		<property name="Class" value="Melee"/>
-		<property name="Delay" value="0.7"/>
-		<property name="Range" value="40"/>
-		<property name="Block_range" value="40"/>
-		<property name="Sphere" value="0.4"/>
-		<property name="Sound_start" value="swoosh"/>
-		<property name="Stamina_usage" value="0"/>
-	</property>
-	<property class="Attributes">
-		<property name="EntityDamage" value="500,5000"/>
-		<property name="BlockDamage" value="500,20000"/>
-		<property name="DismembermentBaseChance" value="1"/>
-	</property>
-</item>
--->
-
 <!-- War of the Walkers Mod Start -->
 
 <item id="1490" name="TungstenFragment">
@@ -17144,6 +17013,134 @@ Mesh files no longer used:
     </property>
 	<property name="DescriptionKey" value="HelmetLightDesc" />
 	<property name="LightValue" value="0.7"/>
+</item>
+
+<item id="1946" name="superWrench">
+	<property name="Extends" value="wrench"/>
+	<property name="CustomIcon" value="wrench"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<Property name="TintColor" value="255,160,160"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="5000,10000"/>
+		<property name="BlockDamage" value="5000,10000"/>
+	</property>
+</item>
+
+
+<item id="1947" name="gunSuperDigger">
+	<property name="CustomIcon" value="gunMP5"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<Property name="TintColor" value="255,160,160"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/MP5/MP5Prefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="6"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DegradationBreaksAfter" value="true"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="CrosshairUpAfterShot" value="false"/>
+	<property name="CrosshairOnAim" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="Delay" value="0.150"/>
+		<property name="Range" value="300"/>
+		<property name="Auto_fire" value="true"/>
+		<property name="Rays_per_shot" value="1"/>
+		<property name="Rays_spread" value="0"/>
+		<property name="Crosshair_min_distance" value="5"/>
+		<property name="Crosshair_max_distance" value="8"/>
+		<property name="DamageBlock" value="3000"/>
+		<property name="DamageEntity" value="0.1"/>
+		<property name="Single_magazine_usage" value="true"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="9mmBullet"/>
+		<property name="Reload_time" value="4.1"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="mp5_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="38"/>
+		<property name="Zoom_max_in" value="10"/>
+	</property>
+	</item>
+
+<item id="1948" name="gunJustDie">
+	<property name="CustomIcon" value="gunPistol"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<Property name="TintColor" value="255,160,160"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DegradationBreaksAfter" value="true"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="CrosshairUpAfterShot" value="false"/>
+	<property name="CrosshairOnAim" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.15"/>
+		<property name="Range" value="300"/>
+		<property name="Auto_fire" value="true"/>
+		<property name="Rays_per_shot" value="5"/>
+		<property name="Rays_spread" value="0.85"/>
+		<property name="DamageEntity" value="1000"/>
+		<property name="DamageBlock" value="0"/>
+		<property name="Single_magazine_usage" value="true"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="9mmBullet"/>
+		<property name="Reload_time" value="2"/>
+		<property name="Bullet_icon" value="pistol"/>
+		<property name="Sound_start" value="Pistol_Fire"/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="pistol_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="45"/>
+		<property name="Zoom_max_in" value="10"/>
+	</property>
+	</item>
+
+<item id="1949" name="hammerOfGod">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="CustomIcon" value="clawHammer"/> <property name="CustomIconTint" value="ffa0a0"/>
+	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="32"/>
+	<property name="DegradationBreaksAfter" value="true"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property class="Action0">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="0.7"/>
+		<property name="Range" value="40"/>
+		<property name="Block_range" value="40"/>
+		<property name="Sphere" value="0.4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="0"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="500,5000"/>
+		<property name="BlockDamage" value="500,20000"/>
+		<property name="DismembermentBaseChance" value="1"/>
+	</property>
 </item>
 
 </items>

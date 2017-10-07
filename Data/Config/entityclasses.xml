@@ -2238,7 +2238,7 @@
 </entity_class>
 
 <!-- BANDITS AND NPC -->
-
+<!--
 	<entity_class name="npcSurvivorMaleTemplate">
 		<property name="EntityType" value="Player" />
 		<property name="Faction" value="whiteriver"/>
@@ -2556,6 +2556,7 @@
 	<property name="AttackTimeoutNight" value="0.3"/>
 	<property name="AIPackages" value="Bandit Basic, Bandit Melee"/>
 </entity_class>
+-->
 
 <entity_class name="npcTraderTemplate">
 	<property name="EntityType" value="Player"/>
